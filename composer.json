@@ -1,9 +1,14 @@
 {
-    "name": "mhalseyperry/file-explorer",
-    "description": "A Laravel Nova tool.",
+    "name": "mhalseyperry/nova-file-explorer",
+    "description": "A Laravel Nova tool for exploring your file systems.",
     "keywords": [
         "laravel",
-        "nova"
+        "nova",
+        "filesystem",
+        "files",
+        "explorer",
+        "directory",
+        "directories"
     ],
     "license": "MIT",
     "require": {
