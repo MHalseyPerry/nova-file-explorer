@@ -1,12 +1,12 @@
 <?php
 
-namespace Vwl\FileExplorer;
+namespace MHalseyPerry\FileExplorer;
 
 use Illuminate\Support\Facades\Route;
 use Illuminate\Support\ServiceProvider;
 use Laravel\Nova\Events\ServingNova;
 use Laravel\Nova\Nova;
-use Vwl\FileExplorer\Http\Middleware\Authorize;
+use MHalseyPerry\FileExplorer\Http\Middleware\Authorize;
 
 class ToolServiceProvider extends ServiceProvider
 {
@@ -17,7 +17,7 @@ class ToolServiceProvider extends ServiceProvider
      */
     public function boot()
     {
-        $this->loadViewsFrom(__DIR__.'/../resources/views', 'file-explorer');
+        $this->loadViewsFrom(__DIR__ . '/../resources/views', 'file-explorer');
 
         $this->app->booted(function () {
             $this->routes();
@@ -40,8 +40,8 @@ class ToolServiceProvider extends ServiceProvider
         }
 
         Route::middleware(['nova', Authorize::class])
-                ->prefix('nova-vendor/file-explorer')
-                ->group(__DIR__.'/../routes/api.php');
+            ->prefix('nova-vendor/file-explorer')
+            ->group(__DIR__ . '/../routes/api.php');
     }
 
     /**

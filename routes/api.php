@@ -2,7 +2,7 @@
 
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
-use Vwl\FileExplorer\Http\Controllers\FileExplorerController;
+use MHalseyPerry\FileExplorer\Http\Controllers\FileExplorerController;
 
 /*
 |--------------------------------------------------------------------------

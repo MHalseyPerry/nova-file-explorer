@@ -1,9 +1,9 @@
 <?php
 
-namespace Vwl\FileExplorer\Http\Middleware;
+namespace MHalseyPerry\FileExplorer\Http\Middleware;
 
 use Laravel\Nova\Nova;
-use Vwl\FileExplorer\FileExplorer;
+use MHalseyPerry\FileExplorer\FileExplorer;
 
 class Authorize
 {

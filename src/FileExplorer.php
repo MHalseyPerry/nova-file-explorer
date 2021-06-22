@@ -1,6 +1,6 @@
 <?php
 
-namespace Vwl\FileExplorer;
+namespace MHalseyPerry\FileExplorer;
 
 use Laravel\Nova\Nova;
 use Laravel\Nova\Tool;

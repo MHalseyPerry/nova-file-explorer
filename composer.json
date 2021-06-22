@@ -1,5 +1,5 @@
 {
-    "name": "vwl/file-explorer",
+    "name": "mhalseyperry/file-explorer",
     "description": "A Laravel Nova tool.",
     "keywords": [
         "laravel",
@@ -11,13 +11,13 @@
     },
     "autoload": {
         "psr-4": {
-            "Vwl\\FileExplorer\\": "src/"
+            "MHalseyPerry\\FileExplorer\\": "src/"
         }
     },
     "extra": {
         "laravel": {
             "providers": [
-                "Vwl\\FileExplorer\\ToolServiceProvider"
+                "MHalseyPerry\\FileExplorer\\ToolServiceProvider"
             ]
         }
     },

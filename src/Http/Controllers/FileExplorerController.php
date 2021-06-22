@@ -1,6 +1,6 @@
 <?php
 
-namespace Vwl\FileExplorer\Http\Controllers;
+namespace MHalseyPerry\FileExplorer\Http\Controllers;
 
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
