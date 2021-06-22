@@ -17,6 +17,10 @@ class ToolServiceProvider extends ServiceProvider
      */
     public function boot()
     {
+        $this->publishes([
+            __DIR__ . '/../config/file-explorer.php' => config_path('file-explorer.php'),
+        ], 'config');
+
         $this->loadViewsFrom(__DIR__ . '/../resources/views', 'file-explorer');
 
         $this->app->booted(function () {
