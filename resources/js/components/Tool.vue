@@ -44,29 +44,31 @@
               </button>
             </td>
           </tr>
-          <tr v-for="directory in directories" :key="directory">
-            <button @click="openDirectory(directory)">
-              <td colspan="2">
-                <div class="flex flex-row items-center">
-                  <svg
-                    class="mr-2"
-                    xmlns="http://www.w3.org/2000/svg"
-                    viewBox="0 0 24 24"
-                    width="24"
-                    height="24"
-                  >
-                    <path
-                      class="heroicon-ui"
-                      d="M20 6a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V6c0-1.1.9-2 2-2h7.41l2 2H20zM4 6v12h16V8h-7.41l-2-2H4z"
-                    />
-                  </svg>
-
-                  <p>
-                    {{ directory }}
-                  </p>
-                </div>
-              </td>
-            </button>
+          <tr
+            v-for="directory in directories"
+            :key="directory"
+            role="button"
+            @click="openDirectory(directory)"
+          >
+            <td colspan="2">
+              <div class="flex flex-row items-center">
+                <svg
+                  class="mr-2"
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24"
+                  width="24"
+                  height="24"
+                >
+                  <path
+                    class="heroicon-ui"
+                    d="M20 6a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V6c0-1.1.9-2 2-2h7.41l2 2H20zM4 6v12h16V8h-7.41l-2-2H4z"
+                  />
+                </svg>
+                <p>
+                  {{ directory }}
+                </p>
+              </div>
+            </td>
           </tr>
           <tr v-for="file in files" :key="file">
             <td>{{ file }}</td>
