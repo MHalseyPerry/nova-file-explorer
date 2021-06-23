@@ -137,7 +137,6 @@ export default {
   methods: {
     getFiles() {
       let path = this.path.join("/");
-      console.log(path, this.selectedDisk);
       this.fetching = true;
       Nova.request()
         .get(
